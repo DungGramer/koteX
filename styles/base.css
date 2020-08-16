@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary: #cc181e;
+	--secondary: #000;
+	--bg-white: rgb(241, 240, 241);
+	--bg-white-hover: rgba(0, 0, 0, 0.1);
+	--f-white: white;
+}
+
+ul > li {
+	list-style: none;
+}
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	line-height: 1.6rem;
+}
+body {
+	background-color: var(--bg-white);
+	font-family: 'Montserrat', sans-serif !important;
+}
+a {
+	color: inherit;
+  text-decoration: none !important; 	
+}

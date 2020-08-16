@@ -1,0 +1,52 @@
+.subscribe {
+	width: 100%;
+	min-height: 200px;
+
+	background-color: var(--secondary);
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.subscribe p {
+	font-size: 2rem;
+	margin: 20px;
+	text-align: center;
+}
+.subscribe div {
+	display: flex;
+	align-items: center;
+	margin: 10px 20px 20px 20px;
+}
+.subscribe input {
+	width: 60vw;
+	height: 41px;
+	padding: 10px;
+	
+	outline: none;
+	border: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	font-size: 1.5rem;
+}
+.subscribe button {
+	padding: 10px 30px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+@media screen and (min-width: 1000px) {
+	.subscribe input {
+		width: 35vw;
+	}
+	.subscribe button {
+		padding: 10px 55px;
+	}
+}

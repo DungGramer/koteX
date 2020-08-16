@@ -1,0 +1,7 @@
+.cover {
+	position: relative;
+}
+.cover img {
+	width: 100%;
+	/* position: absolute; */
+}
