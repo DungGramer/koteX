@@ -3,6 +3,7 @@ header {
 	background-color: black;
 	position: fixed;
 	z-index: 9999;
+	top: 0;
 }
 .navbar {
 	position: relative;
@@ -37,16 +38,16 @@ header {
 .navbar .action {
 	display: flex;
 	margin: 0;
-	padding: 0 20px 0 0;
 
 	position: absolute;
-	top: 0;
 	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 
 	font-size: 1.7rem;
 }
 .action li {
-	padding: 12px 14px;
+	padding: 12px 8px;
 	cursor: pointer;
 }
 .action li:first-child {
@@ -117,6 +118,9 @@ header {
 	}
 	.navbar .action {
 		justify-content: flex-end;
+	}
+	.action li {
+		padding: 12px 18px;
 	}
 	.navbar-collapse {
 		display: block;
