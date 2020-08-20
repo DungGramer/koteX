@@ -9,6 +9,9 @@
 	top: -77px;
 	left: 90px;
 }
+.btn-sort {
+	white-space: nowrap;
+}
 .list-product-sort {
 	margin-right: 20px;
 	align-items: center;
