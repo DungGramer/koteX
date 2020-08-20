@@ -1,0 +1,9 @@
+.breadcrumb { 
+	font-size: 1.4rem;
+}
+
+@media screen and (min-width: 992px) {
+	.breadcrumb { 
+		justify-content: center;
+	}
+}

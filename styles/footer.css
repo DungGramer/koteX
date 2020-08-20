@@ -1,0 +1,29 @@
+footer {
+	border-top: 1px solid #ddd;
+}
+.footer-header {
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+footer li {
+	padding-top: 8px;
+}
+footer a {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+.download-app img{
+	width: 134px;
+}
+.bottom {
+	background-color: var(--secondary);
+	color: white;
+	display: flex;
+	font-size: 1.3rem;
+	text-align: center;
+}
+.bottom a {
+	font-size: 2.3rem;
+}

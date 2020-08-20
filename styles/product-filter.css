@@ -1,0 +1,134 @@
+.products {
+	/* background-color: white; */
+}
+.filter {
+	width: auto;
+	position: absolute;
+
+	height: 0;
+	overflow: hidden;
+
+	transform: scaleY(0);
+	transition: all 0.4s ease-out;
+	transform-origin: top;
+	animation: closeAside 0.4s ease-out;
+
+	z-index: 999;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 2px #e0e0e0;
+}
+.btn-filter {
+	z-index: 999;
+	margin-bottom: 20px;
+}
+.filter-container {
+	padding: 20px 0;
+	border-bottom: 1px solid #ddd;
+}
+.filter-title {
+	display: block;
+	margin-bottom: 10px;
+
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.filter-product {
+	display: grid;
+}
+.filter-product-1 {
+	grid-template-columns: repeat(2, 1fr);
+}
+.filter-product-2 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.filter-product li {
+	display: flex;
+	font-size: 1.5rem;
+	margin: 2px 2px 2px 0;
+}
+.filter-product-title {
+	font-size: 1.5rem;
+}
+.filter-product li :not(.filter-product-title) {
+	color: var(--primary);
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+/* Input Range */
+.input-range-container {
+	display: flex;
+	margin: 2px 0 12px 0;
+}
+.input-range {
+	width: 30%;
+	padding: 2px 8px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #b8b8b8;
+	outline: 0;
+	font-size: 13px;
+}
+.input-range-title {
+	font-size: 1.2rem;
+	margin-top: 8px;
+	display: block;
+}
+.input-range-container span {
+	display: block;
+	margin: 0 10px;
+	align-self: center;
+}
+
+.filter.open {
+	transform: scaleY(1);
+	animation: openAside 0.3s ease-out;
+	height: inherit;
+}
+
+@media screen and (min-width: 992px) {
+	.filter {
+		opacity: 1;
+		visibility: initial;
+		height: initial;
+		transform: scaleY(1);
+		position: relative;
+		width: initial;
+
+		background-color: initial;
+		border: 0;
+		box-shadow: initial;
+	}
+	.btn-filter {
+		display: none;
+	}
+	.input-range {
+		width: 100%;
+	}
+	.filter-product-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.filter-product-1 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@keyframes openAside {
+	from {
+		height: 0;
+	}
+	to {
+		height: auto;
+	}
+}
+@keyframes closeAside {
+	from {
+		height: auto;
+	}
+	to {
+		height: 0;
+	}
+}

@@ -1,0 +1,138 @@
+.list-product-header {
+	margin: 20px 0 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	position: absolute;
+	z-index: 999;
+	top: -77px;
+	left: 90px;
+}
+.list-product-sort {
+	margin-right: 20px;
+	align-items: center;
+	font-size: 1.3rem;
+	position: relative;
+}
+.list-product-header span {
+	border: 1px solid var(--primary);
+	cursor: pointer;
+}
+
+.list-product-header ul {
+	margin-bottom: 0;
+	position: absolute;
+	top: 28px;
+	width: max-content;
+
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	transform:scaleY(0);
+	transition: all 0.3s ease-out;
+	transform-origin:top;
+}
+.list-product-header .open {
+	transform:scaleY(1);
+	animation: openAside 0.3s ease-out;
+	height: inherit;
+	opacity: 1;
+	visibility: initial;
+}
+
+.list-product-header ul li {
+	padding: 10px 12px;
+}
+.list-product-header ul li:hover {
+	background-color: #eee;
+}
+.list-product-search {
+	border-radius: 4px;
+	overflow: hidden;
+	font-size: 13px;
+	display: inline;
+	border: 1px solid #d8d8d8;
+	display: flex;
+}
+.list-product-search input {
+	padding: 0 7px;
+	font-size: 1.3rem;
+	border: 0;
+	outline: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+
+	height: 33px;
+	width: calc(100% - 30px);
+	border-style: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.list-product-search button {
+	border: 0;
+	width: 33px;
+	height: 33px;
+	outline: 0;
+	background-color: var(--primary);
+	color: white;
+	border-left: 1px solid #d3d2d3;
+	border-style: none;
+}
+
+.list-product-container {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+@media screen and (max-width: 992px) and (min-width: 769px) {
+	.list-product-container {
+		grid-template-columns: repeat(3, minmax(100px, 1fr));
+	}
+}
+@media screen and (min-width: 992px) {
+	.list-product-sort {
+		display: flex;
+		flex: 7;
+	}
+	.list-product-header {
+		margin: 20px 0 10px 0;
+		position: relative;
+		
+		top: initial;
+		left: initial;
+	}
+	.list-product-header ul {
+		display: flex;
+		flex: 8;
+		justify-content: space-between;
+		position: relative;
+		top: 0;
+
+		background-color: initial;
+		border: 0;
+		box-shadow: initial;
+
+		visibility: initial;
+		opacity: 1;
+		transform:scaleY(1);
+		height: inherit;
+	}
+	.list-product-header ul li {
+		padding: initial;
+	}
+	.list-product-header span {
+		padding: initial;
+		border: 0;
+		margin-right: 15px;
+		cursor: pointer;
+	}
+
+	.list-product-container {
+		grid-template-columns: repeat(4, minmax(100px, 1fr));
+	}
+	.price {
+		display: block;
+	}
+}

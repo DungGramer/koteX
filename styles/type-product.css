@@ -1,0 +1,41 @@
+.type-product {
+	width: 90%;
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.type-product img {
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-white);
+
+	border-radius: 10px;
+	cursor: pointer;
+	/* box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc; */
+}
+.type-product div {
+	position: relative;
+	margin: 5px 0;
+	text-align: center;
+}
+.type-product .type-title {
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-size: 2.5rem;
+	color: white;
+	text-transform: uppercase;
+
+	opacity: 1;
+	cursor: pointer;
+}
+.type-product img {
+	filter: brightness(0.7);
+	transition: all 0.23s ease-in-out;
+}
+.type-product img:hover {
+	filter: brightness(0.9);
+}
