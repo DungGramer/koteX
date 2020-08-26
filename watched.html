@@ -46,6 +46,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="styles/base.css" />
 		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/info.css" />
 		<link rel="stylesheet" href="styles/footer.css" />
 	</head>
 	<body>
@@ -114,7 +115,62 @@
 		</header>
 		<!-- END HEADER -->
 		<main>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><i class="fas fa-home-lg-alt"></i></li>
+					<li class="breadcrumb-item"><a href="">Product</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Product</li>
+				</ol>
+			</nav>
+			<!-- END BREADCRUMB -->
+			<section class="products">
+				<div class="container">
+					<div class="row">
+						<aside class="menu-left col-lg-3">
+							<div class="account">
+								<img src="https://picsum.photos/200" alt="">
+								<div>
+									<p>Tài khoản của</p>
+									<p>User</p>
+								</div>
+							</div>
+							<ul>
+								<li><a href="./info.html"><i class="fas fa-user"></i><span>Thông tin tài khoản</span></a></li>
+								<li class="menu-left-active"><a href="./noti.html"><i class="fas fa-bell"></i><span>Thông báo của tôi</span></a></li>
+								<li><a href="./favorites.html"><i class="fas fa-heart"></i><span>Sản phẩm yêu thích</span></a></li>
+								<li><a href="./watched.html"><i class="fas fa-eye"></i><span>Sản phẩm đã xem</span></a></li>
+							</ul>
+						</aside>
+						<!-- END ASIDE -->
+						<section class="col-lg-9 col-md-12 notification">
+							<h2 class="heading">Sản phẩm yêu thích</h2>
+							<div class="container notification">
+								<a href="">
+								<div class="noti-item">
+										<img src="https://picsum.photos/200" class="noti-image" />
+										<div class="content">Ổ Cứng Di Động 2.5 inch Seagate Backup Plus Slim Portable Drive 2TB GOLD</div>
+										<div class="wrapper">
+											<div class="true-price">1.000.000 đ</div>
+											<div class="price">1.990.000 đ</div>
+										</div>
+									</div>
+								</a>
+								<a href="">
+									<div class="noti-item">
+											<img src="https://picsum.photos/200" class="noti-image" />
+											<div class="content">Ổ Cứng Di Động 2.5 inch Seagate Backup Plus Slim Portable Drive 2TB GOLD</div>
+											<div class="wrapper">
+												<div class="true-price">1.000.000 đ</div>
+												<div class="price">1.990.000 đ</div>
+											</div>
+										</div>
+									</a>
+							</div>
+						</section>
 
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- END MAIN -->
 		<footer>
@@ -208,6 +264,7 @@
 		<!-- END FOOTER -->
 		<script src="scripts/header.js"></script>
 		<script src="./scripts/fontawesome.js"></script>
+		<script src="scripts/renderDay.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

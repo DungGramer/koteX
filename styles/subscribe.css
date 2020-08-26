@@ -39,6 +39,7 @@
 	border: none;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	outline: none;
 }
 @media screen and (min-width: 992px) {
 	.subscribe input {

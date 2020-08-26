@@ -7,11 +7,13 @@
 }
 
 :root {
-	--primary: #cc181e;
-	--secondary: #000;
+	--primary: #D82B28; /*#ea5454*/
+	--primary-hover: #521D1D;
+	--secondary: #0f1021;
+	--border-color: rgb(221, 221, 221);
 	--bg-white: rgb(241, 240, 241);
-	--bg-white-hover: rgba(0, 0, 0, 0.1);
-	--f-white: white;
+	--bg-white-hover: #ececec;
+	--f-white: rgb(246, 252, 255);
 }
 
 ul > li {
@@ -30,22 +32,55 @@ a {
 	color: inherit;
   text-decoration: none !important; 	
 }
+a:hover {
+	color: var(--primary);
+}
 main {
-	margin-top: 60px;
+	margin-top: 138px;
+}
+@media screen and (min-width: 1040px) {
+	main {
+		margin-top: 78px;
+	}
+}
+.card {
+	border: none;
+}
+.breadcrumb { 
+	font-size: 1.4rem;
+}
+
+@media screen and (min-width: 992px) {
+	.breadcrumb { 
+		justify-content: center;
+	}
 }
 
 .button {
 	color: var(--primary);
 	border-color: var(--primary);
 	padding: 10px;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	border-radius: 5px;
 }
 .button:hover {
 	color: white;
 	background-color: var(--primary);
 }
-
+.dropdown-header {
+	border: 1px solid #34363c;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	background-color: #1e1f24;
+	color: white;
+	font-size: 1.5rem;
+	padding: 0;
+}
+.dropdown-header > li:hover {
+	background-color: #34363c;
+}
+.dropdown-header > li > a:hover {
+	color: white;
+}
 .dropdown {
 	z-index: 999;
 	background-color: white;

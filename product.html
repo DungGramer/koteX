@@ -85,31 +85,59 @@
 					<div class="navbar-view">
 						<span class="menu"><i class="far fa-bars"></i></span>
 						<a href="index.html">
-							<img class="logo" src="images/origin-o-logo.svg" alt="" />
+							<svg class="logo" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2054.6667 544" height="544" width="2054.6667" xml:space="preserve" id="svg2" version="1.1"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs id="defs6"><clipPath id="clipPath26" clipPathUnits="userSpaceOnUse"><path id="path24" d="M 0,408 H 1541 V 0 H 0 Z" /></clipPath></defs><g transform="matrix(1.3333333,0,0,-1.3333333,0,544)" id="g10"><g transform="translate(17.2324,81.6938)" id="g12"><path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 316.425,315.306 377.92,254.928 252.692,125.228 377.92,0 318.66,-60.378 190.078,60.377 62.614,-70.441 Z" /></g><g transform="translate(17.2324,336.6221)" id="g16"><path id="path18" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 60.378,-60.377 125.228,0 62.614,60.378 Z" /></g><g id="g20"><g clip-path="url(#clipPath26)" id="g22"><text id="text30" style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:369px;font-family:Nunito;-inkscape-font-specification:Nunito-Bold;writing-mode:lr-tb;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,455,86.0127)"><tspan id="tspan28" y="0" x="0 241.69501 452.763 588.92401 784.86298">KoteX</tspan></text></g></g></g></svg>
+							<svg class="logo-mini" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 541.33331 544" height="544" width="541.33331" xml:space="preserve" id="svg2" version="1.1"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs id="defs6" /><g transform="matrix(1.3333333,0,0,-1.3333333,0,544)" id="g10"><g transform="translate(17.2324,81.6938)" id="g12"><path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 316.425,315.306 377.92,254.928 252.692,125.228 377.92,0 318.66,-60.378 190.078,60.377 62.614,-70.441 Z" /></g><g transform="translate(17.2324,336.6221)" id="g16"><path id="path18" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 60.378,-60.377 125.228,0 62.614,60.378 Z" /></g></g></svg>
 						</a>
 					</div>
 					<div class="navbar-collapse">
 						<ul>
 							<li class="title-pc">
-								<a href="./product.html">Máy Tính</a
+								<a href="./product.html">Máy Tính </a
 								><i class="fas fa-caret-down"></i>
-								<ul class="dropdown pc">
+								<ul class="dropdown dropdown-header pc">
 									<li>PC theo nhu cầu</li>
 									<li>PC theo giá tiền</li>
 									<li>PC theo thương hiệu</li>
 								</ul>
 							</li>
 							<li>Laptops <i class="fas fa-caret-down"></i></li>
-							<li>Dành cho bạn</li>
 							<li>Linh kiện <i class="fas fa-caret-down"></i></li>
-							<li>Tự build PC</li>
-							<li>Hỗ trợ</li>
+							<li>Dành cho bạn</li>
 						</ul>
 					</div>
 					<ul class="action">
-						<li><i class="far fa-search"></i></li>
-						<li><i class="fas fa-user"></i></li>
-						<li><i class="far fa-shopping-cart"></i></li>
+						<li><div class="searchbox">
+							<div class="input-field first-wrap">
+								<div class="input-select">
+									<select>
+										<option placeholder="">Tất cả</option>
+										<option>Máy tính</option>
+										<option>Laptop</option>
+										<option>Linh kiện</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-field second-wrap">
+								<input id="search" type="text" placeholder="Tìm kiếm" />
+							</div>
+							<div class="input-field third-wrap">
+								<button class="btn-search" type="button">
+									<i class="far fa-search"></i>
+								</button>
+							</div>
+						</div></li>
+						<li class="user">
+							<i class="fas fa-user"></i>
+							<span class="action-login">
+								<p>Đăng nhập</p>
+								<p>Tài khoản</p>
+							</span>
+							<ul class="dropdown-header dropdown-user">
+								<li><a href="">Đăng nhập</a></li>
+								<li><a href="">Tạo tài khoản</a></li>
+								<li class="facebook-login"><a href="">Đăng nhập bằng Facebook</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -126,9 +154,76 @@
 			<!-- END BREADCRUMB -->
 			<section class="products">
 				<div class="container">
-					<button class="btn button btn-filter">Bộ lọc</button>
+					<button class="btn button btn-filter">Bộ Lọc</button>
 					<div class="row">
 						<aside class="filter col-lg-3">
+							<div class="filter-container">
+								<span class="filter-title">Mục đích sử dụng</span>
+								<ul class="filter-product filter-product-1">
+									<li>
+										<div class="checker">
+											<i class="fa fa-check-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title">Laptop Gaming</span>
+									</li>
+									<li>
+										<div class="checker">
+											<i class="fa fa-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title">Đồ hoạ, kiến trúc</span>
+									</li>
+									<li>
+										<div class="checker">
+											<i class="fa fa-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title"
+											>Phổ thông, văn phòng</span
+										>
+									</li>
+									<li>
+										<div class="checker">
+											<i class="fa fa-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title"
+											>Mỏng nhẹ, thời trang</span
+										>
+									</li>
+								</ul>
+							</div>
+							<!-- END FILTER USES -->
+							<div class="filter-container">
+								<span class="filter-title">Khoảng giá</span>
+								<ul class="filter-product filter-product-1">
+									<li>
+										<div class="checker">
+											<i class="fa fa-check-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title">Dưới 10 triệu</span>
+									</li>
+									<li>
+										<div class="checker">
+											<i class="fa fa-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title">10 triệu -  20 triệu</span>
+									</li>
+									<li>
+										<div class="checker">
+											<i class="fa fa-square" aria-hidden="true"></i>
+										</div>
+										<span class="filter-product-title"
+											>Trên 30 triệu</span
+										>
+									</li>
+								</ul>
+								<span class="input-range-title">Chọn khoảng giá</span>
+								<div class="input-range-container">
+									<input class="input-range" type="text" />
+									<span> - </span>
+									<input class="input-range" type="text" />
+								</div>
+								<button class="btn button">OK</button>
+							</div>
+							<!-- END FILTER COST -->
 							<div class="filter-container">
 								<span class="filter-title">Hãng sản xuất</span>
 								<ul class="filter-product filter-product-2">
@@ -171,51 +266,6 @@
 								</ul>
 							</div>
 							<!-- END FILTER BRAND -->
-							<div class="filter-container">
-								<span class="filter-title">Khoảng giá</span>
-								<span class="input-range-title">Chọn khoảng giá</span>
-								<div class="input-range-container">
-									<input class="input-range" type="text" />
-									<span> - </span>
-									<input class="input-range" type="text" />
-								</div>
-								<button class="btn button">OK</button>
-							</div>
-							<!-- END FILTER COST -->
-							<div class="filter-container">
-								<span class="filter-title">Mục đích sử dụng</span>
-								<ul class="filter-product filter-product-1">
-									<li>
-										<div class="checker">
-											<i class="fa fa-check-square" aria-hidden="true"></i>
-										</div>
-										<span class="filter-product-title">Laptop Gaming</span>
-									</li>
-									<li>
-										<div class="checker">
-											<i class="fa fa-square" aria-hidden="true"></i>
-										</div>
-										<span class="filter-product-title">Đồ hoạ, kiến trúc</span>
-									</li>
-									<li>
-										<div class="checker">
-											<i class="fa fa-square" aria-hidden="true"></i>
-										</div>
-										<span class="filter-product-title"
-											>Phổ thông, văn phòng</span
-										>
-									</li>
-									<li>
-										<div class="checker">
-											<i class="fa fa-square" aria-hidden="true"></i>
-										</div>
-										<span class="filter-product-title"
-											>Mỏng nhẹ, thời trang</span
-										>
-									</li>
-								</ul>
-							</div>
-							<!-- END FILTER USES -->
 						</aside>
 						<section class="col-lg-9 col-md-12">
 							<section class="swiper">
@@ -301,10 +351,10 @@
 										<li><a href="">Chọn lọc</a></li>
 									</ul>
 								</div>
-									<form action="" class="list-product-search">
+								<!-- <form action="" class="list-product-search">
 										<input type="text" placeholder="Tìm trong Laptop - Máy Vi Tính - Linh kiện" value="" />
 										<button><i class="far fa-search"></i></button>
-									</form>
+									</form> -->
 							</div>
 							<div class="list-product-container">
 								<article class="card">
@@ -645,9 +695,10 @@
 							></a>
 						</div>
 						<div class="col-12 col-md-4 text-center mt-2 mt-lg-0">
-							<a href="#" target="_blank"
-								><img src="images/origin-o-logo.svg" class="logo"
-							/></a>
+							<a href="#" target="_blank">
+								<svg class="logo" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2054.6667 544" height="544" width="2054.6667" xml:space="preserve" id="svg2" version="1.1"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs id="defs6"><clipPath id="clipPath26" clipPathUnits="userSpaceOnUse"><path id="path24" d="M 0,408 H 1541 V 0 H 0 Z" /></clipPath></defs><g transform="matrix(1.3333333,0,0,-1.3333333,0,544)" id="g10"><g transform="translate(17.2324,81.6938)" id="g12"><path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 316.425,315.306 377.92,254.928 252.692,125.228 377.92,0 318.66,-60.378 190.078,60.377 62.614,-70.441 Z" /></g><g transform="translate(17.2324,336.6221)" id="g16"><path id="path18" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 60.378,-60.377 125.228,0 62.614,60.378 Z" /></g><g id="g20"><g clip-path="url(#clipPath26)" id="g22"><text id="text30" style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:369px;font-family:Nunito;-inkscape-font-specification:Nunito-Bold;writing-mode:lr-tb;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,455,86.0127)"><tspan id="tspan28" y="0" x="0 241.69501 452.763 588.92401 784.86298">KoteX</tspan></text></g></g></g></svg>
+								<svg class="logo-mini" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 541.33331 544" height="544" width="541.33331" xml:space="preserve" id="svg2" version="1.1"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs id="defs6" /><g transform="matrix(1.3333333,0,0,-1.3333333,0,544)" id="g10"><g transform="translate(17.2324,81.6938)" id="g12"><path id="path14" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 316.425,315.306 377.92,254.928 252.692,125.228 377.92,0 318.66,-60.378 190.078,60.377 62.614,-70.441 Z" /></g><g transform="translate(17.2324,336.6221)" id="g16"><path id="path18" style="fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 60.378,-60.377 125.228,0 62.614,60.378 Z" /></g></g></svg>
+						</a>
 						</div>
 						<div class="col-12 col-md-4 text-center text-lg-right mt-3 mt-lg0">
 							<p class="m-0">

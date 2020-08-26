@@ -6,23 +6,13 @@
 
 	position: absolute;
 	z-index: 999;
-	top: -77px;
+	top: -71px;
 	left: 90px;
-}
-.btn-sort {
-	white-space: nowrap;
-}
-.list-product-sort {
-	margin-right: 20px;
-	align-items: center;
-	font-size: 1.3rem;
-	position: relative;
 }
 .list-product-header span {
 	border: 1px solid var(--primary);
 	cursor: pointer;
 }
-
 .list-product-header ul {
 	margin-bottom: 0;
 	position: absolute;
@@ -32,30 +22,53 @@
 	height: 0;
 	opacity: 0;
 	visibility: hidden;
-	transform:scaleY(0);
+	transform: scaleY(0);
 	transition: all 0.3s ease-out;
-	transform-origin:top;
+	transform-origin: top;
+}
+.list-product-header ul li {
+	padding: 10px 12px;
+}
+.list-product-header ul li:hover {
+	background-color: rgb(238, 238, 238);
 }
 .list-product-header .open {
-	transform:scaleY(1);
+	transform: scaleY(1);
 	animation: openAside 0.3s ease-out;
 	height: inherit;
 	opacity: 1;
 	visibility: initial;
 }
+.btn-filter {
+	line-height: initial;
+}
+.btn-sort {
+	white-space: nowrap;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+.list-product-sort {
+	position: relative;
+	margin-right: 20px;
+	align-items: center;
 
-.list-product-header ul li {
-	padding: 10px 12px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #898989;
+
+	padding-bottom: 15px;
 }
-.list-product-header ul li:hover {
-	background-color: #eee;
+.list-product-sort li a{
+	padding: 6px;
 }
+
 .list-product-search {
 	border-radius: 4px;
 	overflow: hidden;
 	font-size: 13px;
 	display: inline;
-	border: 1px solid #d8d8d8;
+	border: 1px solid var(--border-color);
 	display: flex;
 }
 .list-product-search input {
@@ -81,7 +94,7 @@
 	outline: 0;
 	background-color: var(--primary);
 	color: white;
-	border-left: 1px solid #d3d2d3;
+	border-left: 1px solid var(--border-color);
 	border-style: none;
 }
 
@@ -89,6 +102,8 @@
 	display: grid;
 	grid-template-columns: repeat(2, minmax(100px, 1fr));
 }
+
+
 @media screen and (max-width: 992px) and (min-width: 769px) {
 	.list-product-container {
 		grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -98,11 +113,12 @@
 	.list-product-sort {
 		display: flex;
 		flex: 7;
+		border-bottom: 1px solid var(--border-color);
 	}
 	.list-product-header {
-		margin: 20px 0 10px 0;
+		margin: 30px 0;
 		position: relative;
-		
+
 		top: initial;
 		left: initial;
 	}
@@ -119,7 +135,7 @@
 
 		visibility: initial;
 		opacity: 1;
-		transform:scaleY(1);
+		transform: scaleY(1);
 		height: inherit;
 	}
 	.list-product-header ul li {
@@ -137,5 +153,12 @@
 	}
 	.price {
 		display: block;
+	}
+	.btn-sort {
+		color: #000;
+	}
+	.btn-sort:hover {
+		color: #000;
+		background-color: inherit;
 	}
 }
