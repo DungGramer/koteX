@@ -8,3 +8,138 @@
 	top: 0;
 	left: 0;
 } */
+.swiper {
+	display: flex;
+	width: 90%;
+}
+.navigation {
+	display: flex;
+	position: relative;
+}
+.nav-container {
+}
+.nav-style {
+	-webkit-box-align: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.08) 0.1rem 0.1rem 0.5rem 0.1rem;
+	box-sizing: border-box;
+	font-size: 0.75rem;
+	overflow: hidden;
+	padding: 8px 0;
+}
+
+.nav-item {
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	align-items: center;
+
+	background-color: #fff;
+	border-radius: 4px;
+	box-sizing: border-box;
+
+	color: #333;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 32px;
+
+	overflow: hidden;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.nav-item a {
+	padding-left: 10px;
+}
+.carousel {
+	width: 50%;
+	flex: 0.7;
+}
+.banner-right {
+	flex: 0.3;
+}
+.banner-right img {
+	height: 116.42px;
+	width: 100%;
+}
+
+/*------------------------------------*\
+	#Child Nav 
+\*------------------------------------*/
+.childNav-wrap {
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 50;
+	height: 97%;
+	width: 900px;
+	font-size: 1.4rem;
+	transform: translateX(17%);
+	display: none;
+}
+
+.childNav-container {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -.5rem;
+	margin-right: -.5rem;
+	padding-bottom: .7rem;
+}
+
+.header-container {
+	box-sizing: border-box;
+  flex: 0 0 auto;
+	padding: 5px 8px;
+  width: 25%;
+}
+.header-container .header {
+	-webkit-box-align: center;
+  -webkit-box-pack: end;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--primary);
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  justify-content: flex-end;
+  margin-right: -.5rem;
+  text-decoration: underline;
+
+}
+.header-container .header span {
+	-webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  box-sizing: border-box;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.child-container {
+	box-sizing: border-box;
+  flex: 0 0 auto;
+	padding: 5px 8px;
+  width: 75%;
+}
+.childNav-container .child-container a {
+	box-sizing: border-box;
+  color: #555;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5rem;
+	padding: 0 .5rem;
+	font-weight: 500;
+
+}
+.childNav-container .child-container a:hover {
+	color: #000;
+}
+
+/*------------------------------------*\
+	#
+\*------------------------------------*/
+
+.nav-item:hover .childNav-wrap{
+	display: block;
+} 

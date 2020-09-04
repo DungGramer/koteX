@@ -1,0 +1,147 @@
+.login-wrapper {
+	min-height: 29.6875rem;
+	background-color: #fff;
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+	border-radius: 2.5px;
+	overflow: hidden;
+	width: 500px;
+	height: 400px;
+	font-size: 1.3rem;
+	margin: 120px auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.login-wrapper .header-wrapper {
+	height: 50px;
+}
+.login-wrapper .header {
+	padding: 0 30px;
+	font-size: 2rem;
+	color: #222;
+	text-transform: capitalize;
+}
+
+.form-wrapper {
+	padding: 0 20px 18px;
+	overflow: hidden;
+}
+
+.form-wrapper .input {
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 2px;
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+.form-wrapper .input input {
+	padding: 7.5px;
+	outline: none;
+	border: none;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	-webkit-filter: none;
+	filter: none;
+	width: 100%;
+}
+
+.forget-wrapper {
+	margin: 0.9375rem 0;
+}
+.forget-wrapper a {
+	color: #05a;
+}
+
+.login-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 25px 0;
+}
+.login-button button {
+	color: #fff;
+	background-color: var(--primary);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+
+	padding: 10px 20px;
+
+	outline: none;
+	border: 0;
+}
+
+/*------------------------------------*\
+	#Line
+\*------------------------------------*/
+.line {
+	padding-bottom: 0.875rem;
+	display: flex;
+	align-items: center;
+}
+.line-side {
+	border: 0.03125rem solid #dbdbdb;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.line .content {
+	color: #ccc;
+	padding: 0 1rem;
+	text-transform: uppercase;
+}
+/*------------------------------------*\
+	#Other login
+\*------------------------------------*/
+.other-login-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Facebook */
+.button-wrap {
+	display: flex;
+	width: fit-content;
+	align-items: center;
+
+	font-size: 1.4rem;
+	font-weight: 500;
+	border-radius: 2px;
+	padding: 0 10px;
+	color: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+}
+.button-wrap:hover {
+	color: var(--bg-white-hover);
+}
+.other-login-wrapper span {
+	padding: 10px;
+}
+.facebook {
+	background-color: #1877f2;
+}
+.google {
+	background-color: #4285f4;
+}
+/*------------------------------------*\
+	#Sign up
+\*------------------------------------*/
+.signup-wrapper .container{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size: 1.4rem;
+}
+.signup-wrapper .container a {
+	color: var(--primary);
+	font-weight: 600;
+	margin-left: 5px;
+}

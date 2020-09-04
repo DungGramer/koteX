@@ -1,5 +1,5 @@
 .subscribe {
-	width: 100%;
+	width: 1200px;
 	min-height: 200px;
 
 	background-color: var(--secondary);
@@ -9,6 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	margin: 0 auto;
 }
 .subscribe p {
 	font-size: 2rem;

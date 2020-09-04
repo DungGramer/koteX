@@ -15,7 +15,7 @@ h2.heading {
 .account div p:last-child {
 	font-weight: 600;
 }
-.account img {
+.avatar {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;

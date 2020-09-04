@@ -1,6 +1,7 @@
 header {
 	width: 100%;
-	background-color: var(--secondary);
+	padding: 15px 0;
+	background-color: var(--primary);
 	position: fixed;
 	z-index: 9999;
 	top: 0;
@@ -12,7 +13,7 @@ header {
 	justify-content: center;
 }
 .navbar .navbar-container {
-	padding: 7px 20px;
+	padding: 0;
 
 	color: var(--f-white);
 	font-size: 1.5rem;
@@ -27,7 +28,7 @@ header {
 .logo {
 	width: 150px;
 	height: auto;
-	fill: var(--primary);
+	fill: var(--white);
 	display: none;
 }
 .logo-mini {
@@ -43,67 +44,20 @@ header {
 	cursor: pointer;
 }
 
-/* .navbar-collapse */
-.navbar-collapse {
-	display: none;
-	color: var(--f-white);
-}
-
-.open.navbar-collapse {
-	display: block;
-}
-.navbar-collapse ul {
-	margin-bottom: 0;
-}
-.navbar-collapse li {
-	cursor: pointer;
-	text-transform: uppercase;
-	padding: 12px 15px;
-	vertical-align: baseline;
-}
-.navbar-collapse li .fa-caret-down {
-	font-size: 1.5rem;
-}
-
-/* Dropdown menu */
-.dropdown.pc {
-	display: none;
-}
-.navbar-collapse ul {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	background-color: var(--secondary);
-}
-.navbar-collapse ul li ul {
-	position: relative;
-}
-.dropdown.pc li {
-	padding: 12px;
-	font-size: 1.5rem;
-	text-transform: initial;
-	background: inherit;
-	border-bottom: 1px solid #34363c;
-}
-.dropdown.pc li:first-child {
-	margin-top: 12px;
-}
-.navbar-collapse .title-pc:hover .dropdown.pc {
-	display: block;
-}
-
 .searchbox {
 	background: #fff;
 	display: flex;
-	width: 100%;
+	/* width: 100%; */
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	outline: none;
 	overflow: hidden;
 	height: auto;
-	margin-top: 10px;
 }
 .searchbox select,
 .searchbox input,
@@ -117,7 +71,11 @@ header {
 }
 .searchbox .first-wrap {
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 2px;
+	padding: 11px 2px;
+	font-size: 1.6rem;
+}
+.searchbox .second-wrap {
+	width: 100%;
 }
 .searchbox input {
 	background: transparent;
@@ -129,13 +87,13 @@ header {
 	width: 50vw;
 }
 .searchbox button {
-	width: 40px;
-	height: 40px;
-	background-color: var(--primary);
-	color: white;
+	width: 45px;
+	height: 45px;
+	background-color: white;
+	color: var(--primary);
+	font-size: 1.9rem;
 }
 .user {
-	position: absolute;
 	right: 10px;
 	top: 0;
 	transform: translateY(25%);
@@ -146,24 +104,14 @@ header {
 .fa-user {
 	font-size: 2rem;
 }
-/* action */
-.navbar .action {
-	display: flex;
-	margin: 0;
-	font-size: 1.7rem;
-}
-.action li {
-	padding: 12px 8px;
-	cursor: pointer;
-}
-/* .action li:first-child {
-	padding-left: 0;
-} */
 
 /* User Login */
 .action {
 	align-items: center;
 	white-space: nowrap;
+}
+.user {
+	cursor: pointer;
 }
 .action li:nth-child(2) {
 	display: flex;
@@ -175,37 +123,70 @@ header {
 	font-size: 1.4rem;
 	display: none;
 }
-/* Tài khoản */
-.action-login p:nth-child(2) {
-	margin: 0 0 0 10px;
-	font-size: 1.2rem;
-	display: none;
-}
 .dropdown-user {
 	display: none;
 	position: absolute;
 	top: 100%;
 	right: 0;
 
-	border: 1px solid #34363c;
+	/* border: 1px solid #34363c; */
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	background-color: #1e1f24;
-	color: white;
+	background-color: var(--white);
+	color: var(--dark);
 	font-size: 1.5rem;
 	white-space: nowrap;
+}
+.dropdown-user::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	top: -20px;
+	z-index: 1;
+}
+.dropdown-user li {
+	padding: 15px 10px; 
+}
+.dropdown-user li:hover  {
+	background-color: var(--bg-white-hover);
+}
+.dropdown-user li:hover > a {
+	color: initial;
 }
 .user:hover .dropdown-user {
 	display: block;
 }
+
+.action-login {
+	display: grid;
+	place-items: center;
+	font-weight: 600;
+	font-size: 1.4rem;	
+}
+
 .facebook-login {
 	background-color: rgb(59, 89, 152);
 	line-height: 35px;
+	color: white;
 }
 .facebook-login:hover {
 	background-color: rgba(59, 89, 152, 0.65) !important;
 }
 .facebook-login:hover a {
 	color: white;
+}
+.logout {
+	background-color: var(--primary);
+	color: white;
+}
+
+/*------------------------------------*\
+	#Notification
+\*------------------------------------*/
+.notification {
+	font-size: 1.6rem;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 1040px) {
@@ -223,19 +204,20 @@ header {
 	}
 	.searchbox {
 		margin-top: 0;
+		flex: 0.8;
 	}
 	.searchbox input {
-		width: 200px;
+		width: 100%;
 	}
 	.user {
-		position: relative;
 		transform: initial;
+		display: flex;
 	}
 	.navbar {
-		max-width: 100%;
+		max-width: 90%;
 		position: relative;
 		margin: 0 auto;
-		padding: 0 15px;
+		/* padding: 0 15px; */
 	}
 	.navbar-container {
 		flex: auto;
@@ -246,6 +228,7 @@ header {
 	.navbar .navbar-container {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 	}
 	.navbar .action {
 		justify-content: flex-end;
@@ -267,45 +250,4 @@ header {
 		padding-left: 18px;
 	}
 
-	/* Dropdown menu */
-	.dropdown.pc {
-		position: absolute;
-		display: none;
-		top: 100%;
-
-		border: 1px solid #34363c;
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-		background-color: #1e1f24;
-	}
-	.dropdown.pc::after {
-		content: "";
-		display: block;
-		position: absolute;
-		top: -20px;
-		left: 0;
-		width: 60%;
-		height: 23px;
-	}
-	.navbar-collapse ul {
-		position: relative;
-		width: initial;
-	}
-	.dropdown.pc li {
-		padding: 20px;
-		font-size: 1.5rem;
-		text-transform: initial;
-	}
-	.dropdown.pc li:first-child {
-		margin-top: 0;
-	}
-	.dropdown.pc li:hover,
-	.dropdown.pc li:active,
-	.dropdown.pc li:focus {
-		background-color: #34363c;
-	}
-	.navbar-collapse .title-pc:hover .dropdown.pc,
-	.navbar-collapse .title-pc:active .dropdown.pc,
-	.navbar-collapse .title-pc:focus .dropdown.pc {
-		display: block;
-	}
 }

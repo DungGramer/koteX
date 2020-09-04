@@ -1,6 +1,10 @@
 .cover {
 	position: relative;
+	width: 1200px;
+	padding: 0;
+	margin: 20px auto;
 }
+
 .cover img {
 	width: 100%;
 }

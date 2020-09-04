@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 992px) {
 	.product-slide {
-		max-width: 90%;
+		max-width: 1200px;
 	}
 	.product-slide .container-fluid {
 		grid-gap: 10px;

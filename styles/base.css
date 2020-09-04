@@ -15,7 +15,12 @@
 	--bg-white-hover: #ececec;
 	--f-white: rgb(246, 252, 255);
 }
-
+section {
+	/* width: 90%; */
+}
+main {
+	align-items: center;
+}
 ul > li {
 	list-style: none;
 }
@@ -40,7 +45,7 @@ main {
 }
 @media screen and (min-width: 1040px) {
 	main {
-		margin-top: 78px;
+		margin-top: 90px;
 	}
 }
 .card {
@@ -78,6 +83,7 @@ main {
 .dropdown-header > li:hover {
 	background-color: #34363c;
 }
+
 .dropdown-header > li > a:hover {
 	color: white;
 }
